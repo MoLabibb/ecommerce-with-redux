@@ -1117,9 +1117,7 @@
 
 
 @media (max-width:480px) {
-    .price-drops .cards {
-        grid-template-columns: 1fr 1fr;
-    }
+ 
 
     .price-drops .cards .card {
         padding: 0rem;

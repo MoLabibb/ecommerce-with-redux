@@ -17,10 +17,10 @@ export default function Products() {
     setFiltred(products);
   }, [products])
   const categories = products.map((product) => product.main_category).filter((val, id, array) => {
-    return array.indexOf(val) == id;
+    return array.indexOf(val) === id;
   })
   const subCategories = products.map((product) => product.sub_category).filter((val, id, array) => {
-    return array.indexOf(val) == id;
+    return array.indexOf(val) === id;
   })
   const selectedCategory = (cat) => {
     cat === 'all' ? setFiltred(products) : filterSubCategory(cat);

@@ -45,7 +45,7 @@ export default function Home() {
     }
     };  
     const dispatch = useDispatch();    
-    return (
+    return (    
         <section className='home-page'>
 
             <div className="container">
@@ -55,7 +55,7 @@ export default function Home() {
                         <Swiper className='swiper' modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]} spaceBetween={50} slidesPerView={1} navigation pagination={{ clickable: true }} loop='true' centeredSlides={true} autoplay={{ delay: 4000, disableOnInteraction: false, }}>
                             <SwiperSlide className='swiper-item'>
                                 <div className='slide-content'>
-                                    <img src={b1}></img>
+                                    <img src={b1} alt='not available'></img>
                                     <div className='slide-info'>
                                         <h5 className='slide-main-title'>Modern Chair</h5>
                                         <div className='slide-sub-title'>MID CENTURY MODERN DESIGN</div>
@@ -66,7 +66,7 @@ export default function Home() {
                             </SwiperSlide>
                             <SwiperSlide className='swiper-item'>
                                 <div className='slide-content'>
-                                    <img src={b2}></img>
+                                    <img src={b2} alt='not available'></img>
                                     <div className='slide-info'>
                                         <h5 className='slide-main-title'>Contmporary Sofa</h5>
                                         <div className='slide-sub-title'>Take me Home </div>
@@ -77,7 +77,7 @@ export default function Home() {
                             </SwiperSlide>
                             <SwiperSlide className='swiper-item'>
                                 <div className='slide-content'>
-                                    <img src={b3}></img>
+                                    <img src={b3} alt='not available'></img>
                                     <div className='slide-info'>
                                         <h5 className='slide-main-title'>Smart Watch</h5>
                                         <div className='slide-sub-title'>health care monitor</div>
@@ -94,11 +94,11 @@ export default function Home() {
                                 <h5>Put the world on mute-50% OFF</h5>
                                 <Countdown targetDate={targetDate} />
                                 <div className='offer-images'>
-                                    <img src={o1}></img>
-                                    <img src={o2}></img>
-                                    <img src={o3}></img>
-                                    <img src={o4}></img>
-                                    <img src={o5}></img>
+                                    <img  alt='not available' src={o1}></img>
+                                    <img  alt='not available' src={o2}></img>
+                                    <img  alt='not available' src={o3}></img>
+                                    <img  alt='not available' src={o4}></img>
+                                    <img  alt='not available' src={o5}></img>
                                 </div>
                                 <button className='main-btn'>Shop Now</button>
                             </div>
@@ -142,7 +142,7 @@ export default function Home() {
                                 return (
                                     <SwiperSlide className='cat-slide' key={uuidv4()}>
                                         <div className='cat'>
-                                            <div className='image'><img src={cat.image}></img></div>
+                                            <div className='image'><img src={cat.image} alt='not available'></img></div>
                                             <div className='title'>{cat.title} </div>
                                         </div>
                                     </SwiperSlide>
@@ -220,7 +220,7 @@ export default function Home() {
                                             <div className="content">
                                                 <div className='product'>
                                                     <div className='image'>
-                                                        <div className='image'><img src={item.image}></img></div>
+                                                        <div className='image'><img src={item.image} alt='not available'></img></div>
                                                     </div>
                                                     <div className='product-info'>
                                                         <div className='title'>{(item.name).substring(0, 30)}</div>
@@ -258,7 +258,7 @@ export default function Home() {
                             trending.map((trend) => {
                                 return (
                                     <div className='trend-card' key={uuidv4()}>
-                                        <div className='trend-image'><img src={trend.image}></img></div>
+                                        <div className='trend-image'><img src={trend.image} alt='not available'></img></div>
                                         <div className='card-info'>
                                             <div className='card-title'>{trend.name}</div>
                                             <div className='card-price'>
@@ -298,7 +298,7 @@ export default function Home() {
                                     return (
                                         <div className='slide' key={uuidv4()}>
                                             <div className='slide-card'>
-                                                <div className='image'><img src={product.image}></img></div>
+                                                <div className='image'><img src={product.image} alt='not available'></img></div>
                                                 <div className='info'>
                                                     <div className='title'>{product.name}</div>
                                                     {Ratings(product.ratings)}
@@ -321,7 +321,7 @@ export default function Home() {
                             dealImgs.map(banner => {
                                 return (
                                     <SwiperSlide className='swiper-item' key={uuidv4()}>
-                                        <img src={banner.image}></img>
+                                        <img src={banner.image} alt='not available'></img>
                                     </SwiperSlide>
                                 )
                             })
@@ -338,7 +338,7 @@ export default function Home() {
                                     specialOffer.map(product => {
                                         return (
                                             <SwiperSlide className='swiper-item' key={uuidv4()}>
-                                                <img src={product.image}></img>
+                                                <img src={product.image} alt='not available'></img>
                                             </SwiperSlide>
                                         )
                                     })

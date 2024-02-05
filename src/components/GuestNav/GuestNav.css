@@ -16,9 +16,10 @@
 .main-header .brand {
     display: flex;
     align-items: center;
-
 }
-
+.main-header .brand button{
+    background-color: transparent;
+}
 .main-header .brand .logo {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -31,9 +32,10 @@
 }
 
 .main-header .brand .header-menu {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     display: none;
+    margin-right: 10px;
 }
 
 .guest-nav .top-header .main-header .search-form {
@@ -46,7 +48,7 @@
 }
 
 .navbar .guest-nav .top-header .main-header .show-form {
-    top: 4rem;
+    top: 6rem;
 }
 
 .guest-nav .top-header .search-form .header-search-input {
@@ -143,6 +145,7 @@
     position: relative;
     overflow: hidden;
     transform: .5s ease;
+   
 }
 
 
@@ -198,6 +201,7 @@
         margin: 0 0 .5rem;
         padding: .5rem;
         width: 100%;
+        border-bottom: .5px solid #CCC;
     }
 
     .guest-nav .sub-header .navlinks .temp {
@@ -231,13 +235,14 @@
         position: absolute;
         transition: .4s ease;
         width: 60%;
-        top: -4rem;
+        top: -10rem;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .header-icon.search-icon {
         display: block;
+        margin-right: 20px;
     }
 
     .sub-header .navlinks {
@@ -255,6 +260,7 @@
         margin: 0 0 .5rem;
         padding: .5rem;
         width: 100%;
+    
     }
 
     .guest-nav .sub-header .navlinks .temp {

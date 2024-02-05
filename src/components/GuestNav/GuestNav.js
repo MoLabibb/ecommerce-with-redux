@@ -19,7 +19,7 @@ export default function GuestNav() {
                             <button onClick={() => setMenuOpen((prev) => !prev)} >
                                 {menuOpen ? <AiOutlineClose className='header-menu' /> : <AiOutlineMenu className='header-menu' />}
                             </button>
-                            <Link to='/' className='logo' href=''>Sully</Link>
+                            <Link to='/' className='logo' href=''>Selim</Link>
                         </div>
                         <form className={`search-form${searchOpen ? ' show-form' : ''}`}>
                             <input className='header-search-input' type='text' placeholder='find your fit'></input>
@@ -35,15 +35,15 @@ export default function GuestNav() {
 
                     <div className='sub-header'>
                         <ul className={`navlinks${menuOpen ? ' show-categories' : ''}`}>
-                            <li><Link to="/products">Women        </Link></li>
-                            <li><Link to="/products">Men          </Link></li>
-                            <li><Link to="/products">Baby         </Link></li>
-                            <li><Link to="/products">Electronics  </Link></li>
-                            <li><Link to="/products">Home         </Link></li>
-                            <li><Link to="/products">Sports       </Link></li>
-                            <li><Link to="/products">Shoes & Bags </Link></li>
-                            <li><Link to="/products">Fashion Deals</Link></li>
-                            <li><Link to="/products">Jwelerry     </Link></li>
+                            <li><Link to="/products" >Women        </Link></li>
+                            <li><Link to="/products" >Men          </Link></li>
+                            <li><Link to="/products" >Baby         </Link></li>
+                            <li><Link to="/products" >Electronics  </Link></li>
+                            <li><Link to="/products" >Home         </Link></li>
+                            <li><Link to="/products" >Sports       </Link></li>
+                            <li><Link to="/products" >Shoes & Bags </Link></li>
+                            <li><Link to="/products" >Fashion Deals</Link></li>
+                            <li><Link to="/products" >Jwelerry     </Link></li>
                         </ul>
                     </div>
 
